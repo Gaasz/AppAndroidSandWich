@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.supersandwich" >
+    package="com.example.supersandwich">
 
     <application
         android:allowBackup="true"
@@ -8,16 +8,20 @@
         android:label="Sandwich"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Pancitos"
+            android:label="Tipo de Sandwich"
+            android:parentActivityName=".Sandwich"></activity>
         <activity
             android:name=".Sandwich"
             android:label="Varidad de Sandwichs"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".info"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".info"
             android:label="Acerca de Nosotros"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity" >
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
